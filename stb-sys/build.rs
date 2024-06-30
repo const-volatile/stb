@@ -33,7 +33,7 @@ fn main() {
         builder = builder.header(*f)
     }
     builder
-        .whitelist_function("stb.*")
+        .allowlist_function("stb.*")
         .whitelist_type("stb.*")
         .whitelist_var("stb.*")
         .generate()
