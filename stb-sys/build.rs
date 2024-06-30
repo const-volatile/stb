@@ -36,6 +36,8 @@ fn main() {
         .allowlist_function("stb.*")
         .allowlist_type("stb.*")
         .allowlist_var("stb.*")
+        .clang_arg("-include")
+        .clang_arg("string.h")
         .generate()
         .expect("Failed to generate bindings")
         .write_to_file(bindings_path)
