@@ -34,8 +34,8 @@ fn main() {
     }
     builder
         .allowlist_function("stb.*")
-        .whitelist_type("stb.*")
-        .whitelist_var("stb.*")
+        .allowlist_type("stb.*")
+        .allowlist_var("stb.*")
         .generate()
         .expect("Failed to generate bindings")
         .write_to_file(bindings_path)
